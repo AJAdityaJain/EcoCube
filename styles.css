@@ -1,0 +1,131 @@
+*{
+    transition: ease-in-out 0.4s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+}
+nav {
+    background-color: #1f1f1f;
+    padding: .2rem 0;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align:middle;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.1rem;
+}
+nav a:hover {
+    color: #80cd05;
+    font-size: 1.5rem;
+    
+}
+.container {
+    max-width: 800px;
+    padding: 40px;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+#title{
+    font-size: xx-large;
+}
+#title sup{
+    font-size: small;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-color: #80cd05;
+    color: #121212;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+    filter:brightness(80%)    /* background-color: #ffa726; */
+}
+.features {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.feature {
+    flex: 1;
+    padding: 20px;
+}
+.feature i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    background: -webkit-linear-gradient(to right, #80cd05, #ffa726 ) ;
+    background: linear-gradient(to top right, #80cd05, #ffa726); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;}
+
+.cool{
+    background: -webkit-linear-gradient(to right, #05cd6c, #ffa726 ) ;
+    background: linear-gradient(to bottom right, #05cd6c, #ffa726); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-info {
+    text-align: left;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: #ff9800;
+}
+
+.social-icons {
+    text-align: right;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
