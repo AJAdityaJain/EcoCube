@@ -6,7 +6,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #121212;
+    background-color: #c3e9de;
     color: #fff;
     text-align: center;
 }
@@ -27,15 +27,19 @@ nav a {
     margin-right: 20px;
     font-size: 1.1rem;
 }
+
 nav a:hover {
     color: #80cd05;
     font-size: 1.5rem;
     
 }
 .container {
-    max-width: 800px;
-    padding: 40px;
-    margin: 0 auto;
+    top: 10rem;
+    position: absolute;
+    /* width: 100%; */
+    /* max-width: 800px; */
+    /* padding: 40px; */
+    padding: 0 10%;
 }
 h1 {
     font-size: 3rem;
@@ -47,11 +51,65 @@ p {
     line-height: 1.6;
 }
 
+.card{
+    display: flex;
+    margin-left: 3rem;
+    flex-direction: column;
+    padding: 1rem;
+    padding-right: 6rem;
+    width: 9rem;
+    height: 10rem;
+    background-color: #121212;
+    border-radius: 1.5rem;
+    box-shadow: 10px 10px 10px #12121256;
+
+}
+
+.card p {
+    font-size: large;
+}
+
+.card span{
+    font-size: large;
+}
+.card span:hover{
+    scale: 1.2;
+}
+.card span span{
+    position: inherit;
+    font-size: medium;
+    text-decoration: line-through;
+}
+
+.card-container{
+    width: 15rem;
+    height: 15rem;
+    padding: 1rem;
+}
+.card-container img{
+    position:relative;
+    width: 10rem;
+    left: 10rem;
+    top: -11rem;
+}
+.card-container img:hover{
+    scale: 1.2;
+}
+
+
 #title{
     font-size: xx-large;
 }
 #title sup{
     font-size: small;
+}
+
+#banner{
+    filter: brightness(55%);
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 40%;
 }
 
 .cta-button {
@@ -65,17 +123,32 @@ p {
     transition: background-color 0.3s ease;
 }
 .cta-button:hover {
-    filter:brightness(80%)    /* background-color: #ffa726; */
+    scale: 1.03;
+    filter:brightness(80%);    /* background-color: #ffa726; */
 }
 .features {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-top: 50px;
+    margin: 50px;
+    flex-direction: row;
 }
+
 .feature {
     flex: 1;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #1f1f1f;
+    border-radius:1rem;
+    box-shadow: 10px 10px 10px #12121256;
 }
+
+.feature:hover{
+    box-shadow: 10px 10px 15px #1212129b;
+    flex: 1.5;
+    border-radius:1.5rem;
+}
+
 .feature i {
     font-size: 2rem;
     margin-bottom: 10px;
@@ -96,7 +169,7 @@ p {
 footer {
     background-color: #1f1f1f;
     color: #fff;
-    padding: 30px 0;
+    padding: 1rem;
 }
 
 .footer-container {
@@ -116,7 +189,7 @@ footer {
     margin: 0 10px;
 }
 
-.social-icons a:hover {
+.social-icons:hover {
     color: #ff9800;
 }
 
@@ -129,3 +202,140 @@ footer {
     margin-top: 20px;
     font-size: 0.9rem;
 }
+
+.fade {}
+
+@media (max-width: 800px) {
+    nav a {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1rem;
+            
+    }
+
+    .container {
+        top: 3rem;
+    }
+
+    .features {
+        margin: 5px;
+        padding: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+visibility: visible;
+opacity: 1;
+}
+
+.popup {
+margin: 70px auto;
+padding: 20px;
+background: #fff;
+color: #1f1f1f;
+border-radius: 5px;
+width: 45%;
+position: relative;
+transition: all 5s ease-in-out;
+max-height: 80%;
+overflow-y: scroll;
+}
+
+.popup h2 {
+margin-top: 0;
+color: #333;
+font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+position: absolute;
+top: 20px;
+right: 30px;
+transition: all 200ms;
+font-size: 30px;
+font-weight: bold;
+text-decoration: none;
+color: #333;
+}
+.popup .close:hover {
+color: #06D85F;
+}
+.popup .content {
+max-height: 30%;
+overflow: auto;
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input::placeholder{
+    color: #222;
+}
+form button{
+    border: none;
+    outline: none;
+    font-size: x-large;
+    margin: auto;
+    border-radius: 0.4rem;
+    background: -webkit-linear-gradient(to right, #057a41, #121212 ) ;
+    background: linear-gradient(to bottom right, #057a41, #121212); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #c3e9de;
+}
+form input{
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #057a41;
+}
+form textarea{
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #057a41;
+    resize: vertical;
+}
+
+#about{
+    color: #777;
+    height: 80%;
+    text-align: justify;
+}
+
+#about img{
+    margin: 1rem;
+    width: 200px;
+    height: 200px;
+}
+@media screen and (max-width: 700px){
+    .box{
+        width: 70%;
+    }
+    .popup{
+        width: 70%;
+    }
+    #about img{
+        margin: 1rem;
+        width: 140px;
+        height: 140px;
+    }
+}
+    
