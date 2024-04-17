@@ -4,82 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecocube</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ce405dbf84.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
-    <nav>
-        <div style="flex: 1;"></div>
-        <a href="#"><i class="fas fa-solid fa-home"></i> </a>
-        <a href="#"><i class="fas fa-solid fa-shopping-cart"></i></a>
-        <div style="flex: 1;"></div>
-        <img src="icon.svg" alt="icon">
-        <a href="#"><span id="title">Ecocube<sup>®</sup></span></a>
-        <div style="flex: 1;"></div>
-        <a href="#popup-about"><i class="fas fa-solid fa-info"></i></a>
-        <a href="#popup-contact"><i class="fas fa-solid fa-envelope  "></i></a>
-        <div style="flex: 1;"></div>
-    </nav>
-
-    <img src="a-curling-twiglet-of-green-leaves.webp" alt="banner" id="banner">
-    <div class="container">
-        <h1>Nature in a box. <span class="cool">Ecocube</span></h1>
-        <p>Discover the future of lighting and air purification with our innovative <span class="cool">Eco Cube</span>. Control brightness, color, and ambiance with a tap of your finger or  <span class="cool">voice command</span>.</p>
-        <a href="#" class="cta-button fade">Shop Now</a>
-            
-    </div>
-    <div class="features">
-        <div class="feature fade">
-            <i class="fas fa-lightbulb"></i>
-            <h3>Smart Lighting</h3>
-            <p>Adjust brightness and color temperature to suit your mood.</p>
-        </div>
-        <div class="feature fade">
-            <i class="fas fa-wifi"></i>
-            <h3>Connected Devices</h3>
-            <p>Integrate seamlessly with smart home ecosystems.</p>
-        </div>
-        <div class="feature fade">
-            <i class="fas fa-leaf"></i>
-            <h3>Natural Product</h3>
-            <p>Utilizes Algal microbes to purify air</p>
-        </div>
-        <div class="feature fade">
-            <i class="fas fa-music"></i>
-            <h3>Speaker inbuilt</h3>
-            <p>Rock 'n roll or a calming feeling. This does it all.</p>
-        </div>
-    </div>
-    <div class="card-container fade ">
-        <div class="card">
-            <p class="cool">EcoCube : Algae based air-purifier</p>
-            <span><span>Rs3,999.00</span>
-            Rs1,999.00</span>
-        </div> 
-        <img src="file.png" alt="ecocube">
-    
-    </div>
-
-    <footer>
-        <div class="footer-container fade">
-            <div class="footer-info">
-                <h2>Contact Us</h2>
-                <p>Phone: +91 98717 99400 or +91 98106 69695</p>
-                <p>Address: New Delhi, India</p>
-            </div>
-            <div class="social-icons">
-                <a href="https://github.com/AJAdityaJain"><i class="fab fa-github"></i></a>
-                <a href="aryavhulla225@gmail.com"><i class="fa fa-inbox"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
-        <div class="copyright">
-            &copy; 2024 Ecocube & Co. All rights reserved.
-        </div>
-    </footer>
-
     <!--Popups-->
     <div id="popup-contact" class="overlay">
         <div class="popup">
@@ -116,7 +48,114 @@
             </div>
         </div>
     </div>
+    <div id="popup-p0" class="overlay">
+        <div class="popup">
+            <h2><span class="cool">EcoCube</span></h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <div class="popup-product">
+                    <span>
+                        <img src="output.jpg" style="border-radius: 1rem; float: left;" width="250" height="250" alt="">
+                        Reduce indoor air pollution and create a calming atmosphere with the EcoCube: Algae-based Air Purifier. This innovative purifier uses algae to naturally filter harmful pollutants and comes equipped with a speaker, LED mood lights, AQI level indicator, and AI voice assistant. Experience cleaner air and a smarter home with EcoCube.                    
+                        <br>
+                    </span>
+                    <div>
+                        <span>
+                            <div class="number-input">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                              </div>    
+                        </span>
+                        <span class="price" style="margin-top: auto;">
+                            <span>Rs3,999.00</span>
+                            Rs1,999.00
+                            <br>
+                            <br>
+                        </span>
+                    </div>
+                    <!-- <i class="fa fa-share"> Share</i>     -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <nav>
+        <div style="flex: 1;"></div>
+        <img src="icon.png" alt="icon">
+        <a href="#"><i class="fas fa-solid fa-home"></i> </a>
+        <a href="#"><i class="fas fa-solid fa-shopping-cart"></i></a>
+        <a href="#popup-about"><i class="fas fa-solid fa-info"></i></a>
+        <a href="#popup-contact"><i class="fas fa-solid fa-envelope  "></i></a>
+        <div style="flex: 1;"></div>
+    </nav>
+
+    <img src="a-curling-twiglet-of-green-leaves.webp" alt="banner" id="banner">
+    <div class="container">
+        <h1>Nature in a box. <span class="cool">Ecocube</span></h1>
+        <p>Discover the future of lighting and air purification with our innovative <span class="cool">EcoCube</span>. Control brightness, color, and ambiance with a tap of your finger or  <span class="cool">voice command</span>.</p>
+        <a href="#" class="cta-button fade">Shop Now</a>
+            
+    </div>
+    <div class="features">
+        <div class="feature fade">
+            <i class="fas fa-lightbulb"></i>
+            <h3>Smart Lighting</h3>
+            <p>Adjust brightness and color temperature to suit your mood.</p>
+        </div>
+        <div class="feature fade">
+            <i class="fas fa-wifi"></i>
+            <h3>Connected Devices</h3>
+            <p>Integrate seamlessly with smart home ecosystems.</p>
+        </div>
+        <div class="feature fade">
+            <i class="fas fa-leaf"></i>
+            <h3>Natural Product</h3>
+            <p>Utilizes Algal microbes to purify air</p>
+        </div>
+        <div class="feature fade">
+            <i class="fas fa-music"></i>
+            <h3>Speaker inbuilt</h3>
+            <p>Rock 'n roll or a calming feeling. This does it all.</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h2 style="color: black;" class="cool">Featured Products</h2>
+    <a href="#popup-p0">
+        <div class="card-container fade ">
+            <div class="card">
+                <p class="cool">EcoCube : Algae based air-purifier</p>
+                <span class="price">
+                    <span>Rs3,999.00</span>
+                    Rs1,999.00
+                </span>
+            </div> 
+            <img src="file.png" alt="ecocube">
+        
+        </div>
     
+    </a>
+
+    <footer>
+        <div class="footer-container fade">
+            <div class="footer-info">
+                <h2>Contact Us</h2>
+                <span>Phone: +91 98717 99400 or +91 98106 69695</span><br>
+                <span>Address: New Delhi, India</span>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/AJAdityaJain"><i class="fab fa-github"></i></a>
+                <a href="mailto:aryavhulla225@gmail.com"><i class="fa fa-inbox"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 Ecocube & Co. All rights reserved.
+        </div>
+    </footer>    
 </body>
 </html>
 <script src="script.js"></script>

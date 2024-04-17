@@ -1,12 +1,20 @@
 *{
+    font-weight: lighter;
     transition: ease-in-out 0.4s;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Tahoma, sans-serif;
 
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: inherit;
 }
 body {
     margin: 0;
     padding: 0;
-    background-color: #c3e9de;
+    background-color: #d6e0dc;
     color: #fff;
     text-align: center;
 }
@@ -21,7 +29,6 @@ nav {
 }
 nav a {
     color: #fff;
-    text-decoration: none;
     margin: auto;
     margin-left: 20px;
     margin-right: 20px;
@@ -58,10 +65,10 @@ p {
     padding: 1rem;
     padding-right: 6rem;
     width: 9rem;
-    height: 10rem;
+    height: 11rem;
     background-color: #121212;
     border-radius: 1.5rem;
-    box-shadow: 10px 10px 10px #12121256;
+    box-shadow: 10px 10px 20px #12121256;
 
 }
 
@@ -69,13 +76,14 @@ p {
     font-size: large;
 }
 
-.card span{
+.price{
+    width: auto;
     font-size: large;
 }
-.card span:hover{
-    scale: 1.2;
+.price:hover{
+    scale: 1.1;
 }
-.card span span{
+.price span{
     position: inherit;
     font-size: medium;
     text-decoration: line-through;
@@ -85,6 +93,7 @@ p {
     width: 15rem;
     height: 15rem;
     padding: 1rem;
+    color: #fff;
 }
 .card-container img{
     position:relative;
@@ -95,6 +104,22 @@ p {
 .card-container img:hover{
     scale: 1.2;
 }
+.popup-product{
+    overflow-x: hidden;
+    display: flex;
+    color: #777;
+    font-size:1rem;
+    flex-direction: column;
+    text-align: center;
+    padding-right:1rem;
+}
+.popup-product div{
+    display: flex;
+    flex-direction: row;
+}
+.popup-product img{
+    margin: 1rem;
+}
 
 
 #title{
@@ -103,6 +128,7 @@ p {
 #title sup{
     font-size: small;
 }
+
 
 #banner{
     filter: brightness(55%);
@@ -116,15 +142,14 @@ p {
     display: inline-block;
     padding: 12px 24px;
     font-size: 1.2rem;
-    text-decoration: none;
-    background-color: #80cd05;
+    background-color: #12f59a;
     color: #121212;
     border-radius: 30px;
     transition: background-color 0.3s ease;
 }
 .cta-button:hover {
     scale: 1.03;
-    filter:brightness(80%);    /* background-color: #ffa726; */
+    filter:brightness(80%);    /* background-color: #26ffd4; */
 }
 .features {
     display: flex;
@@ -139,12 +164,12 @@ p {
     margin: 10px;
     padding: 10px;
     background-color: #1f1f1f;
-    border-radius:1rem;
-    box-shadow: 10px 10px 10px #12121256;
+    border-radius:1.5rem;
+    box-shadow: 10px 10px 20px #12121256;
 }
 
 .feature:hover{
-    box-shadow: 10px 10px 15px #1212129b;
+    box-shadow: 10px 10px 25px #1212129b;
     flex: 1.5;
     border-radius:1.5rem;
 }
@@ -152,17 +177,18 @@ p {
 .feature i {
     font-size: 2rem;
     margin-bottom: 10px;
-    background: -webkit-linear-gradient(to right, #80cd05, #ffa726 ) ;
-    background: linear-gradient(to top right, #80cd05, #ffa726); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #80cd05, #26ffd4 ) ;
+    background: linear-gradient(to top right, #80cd05, #26ffd4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;}
 
 .cool{
-    background: -webkit-linear-gradient(to right, #05cd6c, #ffa726 ) ;
-    background: linear-gradient(to bottom right, #05cd6c, #ffa726); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #05cd5f, #26ffd4 ) ;
+    background: linear-gradient(to bottom right, #05cd5f, #26ffd4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     background-clip: text;
+    font-family: "Audiowide", sans-serif;
     color: transparent;
 }
 
@@ -184,17 +210,19 @@ footer {
 
 .social-icons a {
     color: #fff;
-    text-decoration: none;
     font-size: 1.5rem;
-    margin: 0 10px;
+    margin: 0 1rem;
 }
 
-.social-icons:hover {
-    color: #ff9800;
+.social-icons a:hover {
+    color: #00ff77;
 }
 
 .social-icons {
     text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
 .copyright {
@@ -225,13 +253,9 @@ footer {
 
 
 
-
-
-
-
-
 .overlay {
     position: fixed;
+    z-index: 1000;
     top: 0;
     bottom: 0;
     left: 0;
@@ -271,7 +295,6 @@ right: 30px;
 transition: all 200ms;
 font-size: 30px;
 font-weight: bold;
-text-decoration: none;
 color: #333;
 }
 .popup .close:hover {
@@ -298,9 +321,9 @@ form button{
     font-size: x-large;
     margin: auto;
     border-radius: 0.4rem;
-    background: -webkit-linear-gradient(to right, #057a41, #121212 ) ;
-    background: linear-gradient(to bottom right, #057a41, #121212); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #c3e9de;
+    background: -webkit-linear-gradient(to right, #05cd5f, #26ffd4 ) ;
+    background: linear-gradient(to bottom right, #05cd5f, #26ffd4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 5px;
 }
 form input{
     border: none;
@@ -339,3 +362,62 @@ form textarea{
     }
 }
     
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.number-input {
+  /* border: 2px solid #ddd; */
+  display: flex;
+  width: min-content;
+  margin: auto;
+  /* margin: 0 50%; */
+}
+
+
+
+.number-input button {
+  outline:none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+}
+
+.number-input button:after {
+  display: inline-block;
+  position: absolute;
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900;
+  content: '\f077';
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+.number-input button.plus:after {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.number-input input[type=number] {
+  font-family: sans-serif;
+  max-width: 2rem;
+  padding: .5rem;
+  border: solid #ddd;
+  border-width: 0 2px;
+  font-size: 1rem;
+  height: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
