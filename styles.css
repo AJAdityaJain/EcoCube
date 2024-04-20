@@ -24,7 +24,7 @@ nav {
     height: 3rem;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:space-evenly;
     vertical-align:middle;
 }
 nav a {
@@ -170,7 +170,7 @@ p {
 
 .feature:hover{
     box-shadow: 10px 10px 25px #1212129b;
-    flex: 1.5;
+    flex: 1.3;
     border-radius:1.5rem;
 }
 
