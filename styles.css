@@ -116,6 +116,20 @@ p {
 .popup-product div{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+}
+.popup-product>button{
+    border: none;
+    outline: none;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 20px #12121256;
+
+    background: -webkit-linear-gradient(to right, #05cd5f, #26ffd4 ) ;
+    background: linear-gradient(to bottom right, #05cd5f, #26ffd4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .popup-product img{
     margin: 1rem;
@@ -348,6 +362,10 @@ form textarea{
     width: 200px;
     height: 200px;
 }
+#about video{
+    width: 300px;
+    margin: 1rem;
+}
 @media screen and (max-width: 700px){
     .box{
         width: 70%;
@@ -359,6 +377,10 @@ form textarea{
         margin: 1rem;
         width: 140px;
         height: 140px;
+    }
+
+    #about video{
+        width: 250px;
     }
 }
     
