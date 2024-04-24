@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecocube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ce405dbf84.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body>
+<!--Popups-->
+<div id="popup-contact" class="overlay">
+    <div class="popup">
+        <h2>Contact Us</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <form action="">
+                <input type="text" placeholder="Full Name">
+                <input type="text" placeholder="Email">
+                <textarea placeholder="Message" id="" cols="20" rows="10"></textarea>
+                <button type="submit">Send</button>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<div id="popup-p0" class="overlay">
+    <div class="popup">
+        <h2><span class="cool">EcoCube</span></h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            <div class="popup-product">
+                <span>
+                    <img src="output.jpg" style="border-radius: 1rem; float: left;" width="250" height="250" alt="">
+                    Reduce indoor air pollution and create a calming atmosphere with the EcoCube: Algae-based Air Purifier. This innovative purifier uses algae to naturally filter harmful pollutants and comes equipped with a speaker, LED mood lights, AQI level indicator, and AI voice assistant. Experience cleaner air and a smarter home with EcoCube.                    
+                    <br>
+                </span>
+                <div>
+                    <span>
+                        <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                            <input class="quantity" min="0" name="quantity" value="1" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                          </div>    
+                    </span>
+                    <span class="price" style="margin-top: auto;">
+                        <span>Rs5,999.00</span>
+                        Rs3,999.00
+                        <br>
+                        <br>
+                    </span>
+                </div>
+                <button>Coming soon</button>
+                <!-- <i class="fa fa-share"> Share</i>     -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <nav>
+        <div style="flex: 0.05;"></div>
+        <img src="icon.png" alt="icon">
+        <a href="index.html">
+            Home
+            <!-- <i class="fas fa-solid fa-home"></i>  -->
+        </a>
+        <a href="https://docs.google.com/document/d/1iit2k9s_NNA8Zr_8JxgiZnK0Z-T_19yiFPEgrCYdTYw/edit">
+            Synopsis
+            <!-- <i class="fas fa-solid fa-shopping-cart"></i> -->
+        </a>
+        <a href="#">
+            About
+            <!-- <i class="fas fa-solid fa-info"></i> -->
+        </a>
+        <a href="#popup-contact">
+            Contact
+            <!-- <i class="fas fa-solid fa-envelope  "></i> -->
+        </a>
+        <div style="flex: 0.1;"></div>
+    </nav>
+
+    <div id="about">
+        <video width="400" controls>
+            <source src="VID-20240424-WA0000.mp4" type="video/mp4" autoplay muted>
+            Your browser does not support HTML video.
+        </video>      
+        <p>
+            We at EcoCube are driven by a strong ambition to revolutionize technology in a sustainable and eco-friendly way. Our mission is to improve the lives of people by offering innovative tech products. One of our flagship products is the EcoCube: Algae-based Air Purifier. This revolutionary device utilizes the natural filtering power of algae to remove harmful pollutants from the air, creating a cleaner and healthier living environment. With features like LED mood lights, an AQI level indicator, and an AI voice assistant, the EcoCube provides not only cleaner air but also a smarter home experience.
+
+            At EcoCube, we believe that technology has the power to change lives for the better. By harnessing the potential of sustainable development, we are paving the way for a brighter future. Join us on this journey towards a more eco-friendly and technologically advanced world.
+        </p>    
+
+        <video width="400" controls>
+            <source src="video.mp4" type="video/mp4" autoplay muted>
+            Your browser does not support HTML video.
+        </video>             
+
+    </div>
+
+
+    <footer>
+        <div class="footer-container fade">
+            <div class="footer-info">
+                <h2>Contact Us</h2>
+                <span>Phone: +91 98717 99400 or +91 98106 69695</span><br>
+                <span>Address: New Delhi, India</span>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/AJAdityaJain"><i class="fab fa-github"></i></a>
+                <a href="mailto:ecocube.business@gmail.com"><i class="fa fa-inbox"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 Ecocube & Co. All rights reserved.
+        </div>
+    </footer>    
+</body>
+</html>
+<script src="script.js"></script>

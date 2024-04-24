@@ -352,19 +352,22 @@ form textarea{
 }
 
 #about{
+    margin: auto;
+    width: 60%;
     color: #777;
     height: 80%;
     text-align: justify;
-}
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}  
 
-#about img{
-    margin: 1rem;
-    width: 200px;
-    height: 200px;
-}
+
 #about video{
-    width: 300px;
+    width: 80%;
     margin: 1rem;
+    padding: 0 10%;
+
 }
 @media screen and (max-width: 700px){
     .box{
@@ -372,6 +375,9 @@ form textarea{
     }
     .popup{
         width: 70%;
+    }
+    #about {
+        width: 95%;
     }
     #about img{
         margin: 1rem;
